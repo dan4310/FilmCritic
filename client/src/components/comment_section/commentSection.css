@@ -1,0 +1,78 @@
+.comment-section-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+  padding: 0rem 1rem;
+}
+
+.comment-section-container .comments-section-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.comment-section-container .comments-section-list .comment-with-border {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.25rem;
+}
+
+.comment-section-container .comments-section-list hr {
+  border: 1px solid #47475a;
+}
+
+.comment-section-container .comments-section-list .comments-section-list-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comment-section-container .comments-section-list .comments-section-list-footer .show-more-container {
+  border: 2px solid #505064;
+  color: #505064;
+  border-radius: 100px;
+  padding: 6px 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: none;
+}
+
+.comment-section-container .comments-section-list .comments-section-list-footer .show-more-container span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.comment-section-container .comments-section-list .comments-section-list-footer .show-more-container:hover {
+  cursor: pointer;
+  color: white;
+  border: 2px solid white;
+}
+/*# sourceMappingURL=commentSection.css.map */

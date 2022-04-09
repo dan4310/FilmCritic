@@ -1,0 +1,49 @@
+.badge-container, .badge-container-clickable, .badge-container-clickable-disabled, .badge-container-clickable-active, .badge-container-clickable-active-disabled {
+  border: 2px solid white;
+  border-radius: 15px;
+  padding: 4px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+}
+
+.badge-container-clickable, .badge-container-clickable-disabled, .badge-container-clickable-active, .badge-container-clickable-active-disabled {
+  color: #505064;
+  border: 2px solid #505064;
+}
+
+.badge-container-clickable:hover, .badge-container-clickable-disabled:hover, .badge-container-clickable-active:hover, .badge-container-clickable-active-disabled:hover {
+  cursor: pointer;
+}
+
+.badge-container-clickable-disabled:hover {
+  cursor: default;
+}
+
+.badge-container-clickable-active {
+  color: white;
+  border: 2px solid white;
+}
+
+.badge-container-clickable-active-disabled {
+  color: #505064;
+  border: 2px solid #505064;
+}
+
+.badge-container-clickable-active-disabled:hover {
+  cursor: default;
+}
+
+.badge-container .badge, .badge-container-clickable .badge, .badge-container-clickable-disabled .badge, .badge-container-clickable-active .badge, .badge-container-clickable-active-disabled .badge {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 400;
+}
+/*# sourceMappingURL=badge.css.map */

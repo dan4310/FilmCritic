@@ -1,0 +1,43 @@
+@import "../../styles/variables";
+
+.badge-container {
+  border: 2px solid $white;
+  border-radius: 15px;
+  padding: 4px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+  &-clickable {
+    @extend .badge-container;
+    color: $primary;
+    border: 2px solid $primary;
+    &:hover {
+      cursor: pointer;
+    }
+    &-disabled {
+      @extend .badge-container-clickable;
+      &:hover {
+        cursor: default;
+      }
+    }
+    &-active {
+      @extend .badge-container-clickable;
+      color: $white;
+      border: 2px solid $white;
+      &-disabled {
+        @extend .badge-container-clickable;
+        color: $primary;
+        border: 2px solid $primary;
+        &:hover {
+          cursor: default;
+        }
+      }
+    }
+  }
+  .badge {
+    white-space: nowrap;
+    font-size: $fontSizeP;
+    font-weight: $fontWeightRegular;
+  }
+}

@@ -1,0 +1,33 @@
+.not-found-page {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.not-found-page .not-found-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.not-found-page .not-found-icon {
+  font-size: 60px;
+  margin-bottom: 1rem;
+  color: white;
+  text-shadow: 3px 3px #505064;
+}
+/*# sourceMappingURL=notFoundPage.css.map */

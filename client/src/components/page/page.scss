@@ -1,0 +1,13 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.page-component-container {
+  min-height: 100vh;
+  padding-bottom: 5rem;
+  @include page-top-padding(1rem);
+
+  &-flush {
+    @extend .page-component-container;
+    padding-top: 0;
+  }
+}

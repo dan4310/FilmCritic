@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.movies-page {
+  .center-panel {
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    gap: $mediumMargin;
+    .search-tools-container {
+      display: flex;
+      flex-direction: column;
+      gap: $margin;
+      .genres-container {
+        display: flex;
+        overflow-x: scroll;
+        gap: $margin;
+
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+    .movies-container {
+      display: flex;
+      justify-content: space-around;
+      gap: $mediumMargin;
+      flex-wrap: wrap;
+    }
+  }
+}

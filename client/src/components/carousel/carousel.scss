@@ -1,0 +1,99 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.carousel-container {
+  overflow-x: hidden;
+  display: flex;
+  height: auto;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+
+  .movie-container {
+    height: fit-content;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .carousel-shadow {
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(transparent, $secondary);
+      width: 100%;
+      height: 50%;
+    }
+    .carousel-shadow-left {
+      position: absolute;
+      left: 5%;
+      background: linear-gradient(90deg, $secondary, transparent);
+      width: 25%;
+      height: 100%;
+    }
+    .carousel-shadow-right {
+      position: absolute;
+      right: 5%;
+      background: linear-gradient(-90deg, $secondary, transparent);
+      width: 25%;
+      height: 100%;
+    }
+    .movie-info-container {
+      position: absolute;
+      width: 100%;
+      height: fit-content;
+      display: flex;
+      justify-content: center;
+      padding: 2rem;
+      margin-top: $navbarHeight;
+
+      .title-container {
+        h1 {
+          visibility: hidden;
+          margin-bottom: 1rem;
+          @include breakpoint(sm, min) {
+            visibility: visible;
+          }
+        }
+        p {
+          width: 50%;
+          @include breakpoint(md, min) {
+            visibility: visible;
+          }
+          visibility: hidden;
+        }
+      }
+    }
+    .carousel-image-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .carousel-image {
+        width: 90%;
+      }
+    }
+  }
+
+  .carousel-button {
+    z-index: 100;
+    position: absolute;
+    bottom: 20%;
+    padding: 5px;
+    width: 10rem;
+    border: none;
+    background: transparent;
+    font-size: 80px;
+    font-weight: 100;
+    opacity: 0.3;
+    color: $white;
+    &:hover {
+      cursor: pointer;
+      opacity: 1;
+    }
+  }
+
+  .left {
+    left: 0;
+  }
+  .right {
+    right: 0;
+  }
+}

@@ -1,0 +1,60 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.login-page {
+  padding-right: $margin;
+  padding-left: $margin;
+  @include breakpoint(sm, min) {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+  @include breakpoint(md, min) {
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  @include breakpoint(lg, min) {
+    grid-template-columns: 2fr 3fr 2fr;
+  }
+  .login-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: $mediumMargin;
+    .form-with-title {
+      display: flex;
+      flex-direction: column;
+      gap: $margin;
+      .login-form {
+        display: flex;
+        flex-direction: column;
+        gap: $margin;
+        .server {
+          &-error {
+            h3 {
+              color: $red;
+            }
+          }
+          &-loading {
+            h3 {
+              color: $tertiery;
+            }
+          }
+          &-success {
+            h3 {
+              color: $green;
+            }
+          }
+        }
+        .form-footer {
+          display: flex;
+          .btn-large {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+
+  .here-txt {
+    color: $tertiery;
+    border-bottom: 2px solid $tertiery;
+  }
+}

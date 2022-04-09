@@ -1,0 +1,48 @@
+@import "../../styles/variables";
+
+.comment-section-container {
+  display: flex;
+  flex-direction: column;
+  gap: $margin;
+  padding: 0rem $margin;
+  .comments-section-list {
+    display: flex;
+    flex-direction: column;
+    gap: $margin;
+
+    .comment-with-border {
+      display: flex;
+      flex-direction: column;
+      gap: $xsmallMargin;
+    }
+
+    hr {
+      border: 1px solid $primaryDark;
+    }
+
+    .comments-section-list-footer {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .show-more-container {
+        border: 2px solid $primary;
+        color: $primary;
+        border-radius: 100px;
+        padding: 6px 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: none;
+        span {
+          font-size: 14px;
+          font-weight: 500;
+        }
+        &:hover {
+          cursor: pointer;
+          color: $white;
+          border: 2px solid $white;
+        }
+      }
+    }
+  }
+}

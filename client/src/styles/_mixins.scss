@@ -1,0 +1,77 @@
+@import "variables";
+@import "typography";
+@import "keyframes";
+
+@mixin container($color, $padding) {
+  background: $color;
+  padding: $padding;
+}
+
+@mixin box-shadow($color) {
+  box-shadow: 4px 4px 20px 4px $color;
+}
+
+@mixin box-shadow-small($color) {
+  box-shadow: 2px 2px 15px 2px $color;
+}
+
+@mixin margin-sizes {
+  &-xs {
+    @content;
+    padding: $xsmallMargin;
+  }
+  &-sm {
+    @content;
+    padding: $smallMargin;
+  }
+  &-md {
+    @content;
+    padding: $mediumMargin;
+  }
+  &-lg {
+    @content;
+    padding: $largeMargin;
+  }
+}
+
+@mixin breakpoint($breakpoint, $direction) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Get the breakpoint value.
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @if $direction == max {
+      @media (max-width: ($breakpoint-value - 1)) {
+        @content;
+      }
+    } @else if $direction == min {
+      @media (min-width: $breakpoint-value) {
+        @content;
+      }
+    }
+
+    // If the breakpoint doesn't exist in the map.
+  } @else {
+    @if $direction == max {
+      @media (max-width: $breakpoint) {
+        @content;
+      }
+    } @else if $direction == min {
+      @media (min-width: $breakpoint) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin center-form {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include breakpoint(md, min) {
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+}
+
+@mixin page-top-padding($padding) {
+  padding-top: $navbarHeight + $padding;
+}

@@ -1,0 +1,26 @@
+@import "../../styles/variables";
+
+.movie-row-container {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(12rem + 3rem);
+  margin-right: -$mainContentMargin;
+  .movie-row {
+    display: flex;
+    flex-direction: row;
+    gap: $mediumMargin;
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    padding-bottom: $mediumMargin;
+    padding-top: $smallMargin + 0.1rem;
+  }
+
+  .genre-name {
+    z-index: 10;
+    padding-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,139 @@
+@import "../../styles/typography";
+@import "../../styles/variables";
+@import "../../styles/globals";
+@import "../../styles//keyframes";
+.navbar {
+  z-index: 10000;
+  width: 100%;
+  height: $navbarHeight;
+  padding: 0.5rem 1rem;
+  display: flex;
+  position: fixed;
+  align-items: center;
+
+  .nav-menu {
+    .menu-icon-container {
+      padding: 3px 5px;
+      border: 2px solid transparent;
+      border-radius: 3px;
+      margin-left: -0.5rem;
+      &:hover {
+        cursor: pointer;
+      }
+      .menu-icon {
+        color: $white;
+        font-size: 30px;
+        text-shadow: 3px 3px $black;
+        padding-right: 3px;
+      }
+      &:hover {
+        box-shadow: 4px 4px $black;
+        animation: border-round 1s forwards ease-in-out;
+      }
+      &:active {
+        background: $tertiery;
+      }
+    }
+    margin-right: $smallMargin;
+    @include breakpoint(sm, min) {
+      display: none;
+    }
+    .open {
+      background: $primary;
+    }
+  }
+
+  .logo-container {
+    margin-right: $margin;
+  }
+  .nav-main {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    .nav-left {
+      display: flex;
+      align-items: center;
+      .nav-links {
+        display: flex;
+        @include breakpoint(sm, max) {
+          visibility: collapse;
+        }
+      }
+    }
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: $xsmallMargin;
+      .btn-signup {
+        @extend .nav-link;
+        display: flex;
+        font-size: 12px;
+        flex-direction: column;
+        align-items: center;
+        .signup-text {
+          text-shadow: 2px 2px $black;
+        }
+        @include breakpoint(sm, max) {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .nav-link {
+    color: $white;
+    font-weight: $fontWeightRegular;
+    border-radius: 3px;
+    padding: 3px 5px;
+    border: 2px solid transparent;
+    &:hover {
+      animation: border-round 0.75s forwards ease-in-out;
+    }
+    &:active {
+      color: $primary;
+      text-shadow: 2px 2px $black;
+    }
+  }
+
+  .hidden {
+    left: -100%;
+  }
+}
+
+.menu {
+  transition: left 0.25s ease-in-out;
+  position: fixed;
+  display: flex;
+  width: 100%;
+  left: 0;
+  height: 100vh;
+  .menu-links {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $smallMargin;
+    background: $primary;
+    overflow-y: scroll;
+    height: 100%;
+    padding: 0 $margin;
+    .real-link {
+      width: 100%;
+      border-bottom: 2px solid $primaryDark;
+      .nav-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: $smallMargin;
+      }
+    }
+  }
+  .menu-cover {
+    flex: 2;
+    margin-top: 5px;
+  }
+}
+
+.solid {
+  background: $primary;
+}

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,sBAAsB,CAAC;EACrB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,GAAG,ECQI,IAAI;CDPZ;;AACD,AAAA,YAAY,CAAC;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,GAAG,ECQS,IAAI;CDPjB",
+    "sources": [
+        "movieReviews.scss",
+        "../../styles/_variables.scss"
+    ],
+    "names": [],
+    "file": "movieReviews.css"
+}

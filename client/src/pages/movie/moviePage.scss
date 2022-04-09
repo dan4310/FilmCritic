@@ -1,0 +1,83 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.movie-page {
+  .center-panel {
+    display: flex;
+    flex-direction: column;
+    gap: $mediumMargin;
+    .movie-header {
+      display: flex;
+      gap: $mediumMargin;
+      .poster-container {
+        flex: 1;
+        display: none;
+        @include breakpoint(sm, min) {
+          display: flex;
+        }
+      }
+      .header-info-container {
+        flex: 2;
+        display: flex;
+        flex-direction: column;
+        gap: $margin;
+        justify-content: space-between;
+        .header-top {
+          display: flex;
+          flex-direction: column;
+          gap: $margin;
+          .title-rating {
+            display: flex;
+            .movie-title {
+              padding-right: $margin;
+              display: flex;
+              flex-direction: column;
+              gap: $xsmallMargin;
+              margin-right: auto;
+            }
+          }
+
+          .quick-facts-container {
+            display: flex;
+            flex-flow: row wrap;
+            gap: $margin;
+            justify-content: space-between;
+          }
+        }
+
+        .header-bottom {
+          .genres-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: $margin;
+          }
+        }
+      }
+    }
+
+    .overview-container {
+      display: flex;
+      flex-direction: column;
+      gap: $margin;
+    }
+    .reviews-container {
+      display: flex;
+      flex-direction: column;
+      gap: $margin;
+    }
+  }
+
+  .fact-container {
+    display: flex;
+    flex-direction: column;
+    gap: $xsmallMargin;
+    .fact-prop {
+      color: $primary;
+      text-shadow: 1px 1px $black;
+    }
+    .fact {
+      color: $white;
+      font-weight: $fontWeightBold;
+    }
+  }
+}

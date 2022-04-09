@@ -1,0 +1,64 @@
+.comment-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  padding: 0rem 1rem;
+}
+
+.comment-container .comment-body p {
+  font-size: 14px;
+}
+
+.comment-container .comment-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comment-container .comment-header i {
+  margin-left: auto;
+  font-size: 20px;
+  color: #47475a;
+}
+
+.comment-container .comment-header i:hover {
+  color: white;
+  text-shadow: 2px 2px #000000;
+  cursor: pointer;
+}
+
+.comment-container .comment-header .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.comment-container .comment-header .user-info .review-first-name {
+  font-size: 10px;
+}
+
+.comment-container .comment-header .user-info .review-username {
+  font-size: 8px;
+}
+
+.comment-container .comment-header .timestamp {
+  margin-left: auto;
+  font-size: 10px;
+  color: #505064;
+}
+
+.comment-container .comment-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/*# sourceMappingURL=comment.css.map */

@@ -1,0 +1,24 @@
+@import "../../styles/variables";
+
+.loader-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  border: 0.3rem solid transparent;
+  border-top: 0.3rem solid $tertiery;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,123 @@
+.search-input-container, .search-input-container-hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: white;
+  width: 100%;
+}
+
+.search-input-container-hide {
+  width: auto;
+}
+
+.search-input-container .search-input, .search-input-container-hide .search-input, .search-input-container .search-input-hide, .search-input-container-hide .search-input-hide {
+  border-radius: 20px;
+  border: 2px solid white;
+  -webkit-box-shadow: 2px 2px #000000;
+          box-shadow: 2px 2px #000000;
+  padding: 0 calc(40px + 5px);
+  height: 40px;
+  width: 100%;
+  position: relative;
+  background: none;
+  color: white;
+}
+
+.search-input-container .search-input::-webkit-input-placeholder, .search-input-container-hide .search-input::-webkit-input-placeholder, .search-input-container .search-input-hide::-webkit-input-placeholder, .search-input-container-hide .search-input-hide::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #505064;
+  text-shadow: 2px 2px #000000;
+  opacity: 1;
+  /* Firefox */
+}
+
+.search-input-container .search-input:-ms-input-placeholder, .search-input-container-hide .search-input:-ms-input-placeholder, .search-input-container .search-input-hide:-ms-input-placeholder, .search-input-container-hide .search-input-hide:-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #505064;
+  text-shadow: 2px 2px #000000;
+  opacity: 1;
+  /* Firefox */
+}
+
+.search-input-container .search-input::-ms-input-placeholder, .search-input-container-hide .search-input::-ms-input-placeholder, .search-input-container .search-input-hide::-ms-input-placeholder, .search-input-container-hide .search-input-hide::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #505064;
+  text-shadow: 2px 2px #000000;
+  opacity: 1;
+  /* Firefox */
+}
+
+.search-input-container .search-input::placeholder, .search-input-container-hide .search-input::placeholder, .search-input-container .search-input-hide::placeholder, .search-input-container-hide .search-input-hide::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #505064;
+  text-shadow: 2px 2px #000000;
+  opacity: 1;
+  /* Firefox */
+}
+
+.search-input-container .search-input:-ms-input-placeholder, .search-input-container-hide .search-input:-ms-input-placeholder, .search-input-container .search-input-hide:-ms-input-placeholder, .search-input-container-hide .search-input-hide:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #505064;
+}
+
+.search-input-container .search-input::-ms-input-placeholder, .search-input-container-hide .search-input::-ms-input-placeholder, .search-input-container .search-input-hide::-ms-input-placeholder, .search-input-container-hide .search-input-hide::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #505064;
+}
+
+.search-input-container .search-input-hide, .search-input-container-hide .search-input-hide {
+  display: none;
+}
+
+.search-input-container .search-input-icon, .search-input-container-hide .search-input-icon, .search-input-container .search-input-icon-left, .search-input-container-hide .search-input-icon-left, .search-input-container .search-input-icon-left-hide, .search-input-container-hide .search-input-icon-left-hide, .search-input-container .search-input-icon-right, .search-input-container-hide .search-input-icon-right, .search-input-container .search-input-icon-right-hide, .search-input-container-hide .search-input-icon-right-hide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  border-radius: 100%;
+  font-size: 16px;
+  padding: 10px;
+  background: none;
+  text-shadow: 2px 2px #000000;
+  border: 2px solid transparent;
+}
+
+.search-input-container .search-input-icon-left, .search-input-container-hide .search-input-icon-left, .search-input-container .search-input-icon-left-hide, .search-input-container-hide .search-input-icon-left-hide {
+  left: 0;
+}
+
+.search-input-container .search-input-icon-left:hover, .search-input-container-hide .search-input-icon-left:hover, .search-input-container .search-input-icon-left-hide:hover, .search-input-container-hide .search-input-icon-left-hide:hover {
+  cursor: pointer;
+}
+
+.search-input-container .search-input-icon-left-hide, .search-input-container-hide .search-input-icon-left-hide {
+  background: #e1caf0;
+  -webkit-box-shadow: 3px 3px #000000;
+          box-shadow: 3px 3px #000000;
+  position: inherit;
+  border: 2px solid white;
+  color: white;
+}
+
+.search-input-container .search-input-icon-right, .search-input-container-hide .search-input-icon-right, .search-input-container .search-input-icon-right-hide, .search-input-container-hide .search-input-icon-right-hide {
+  right: 0;
+}
+
+.search-input-container .search-input-icon-right:hover, .search-input-container-hide .search-input-icon-right:hover, .search-input-container .search-input-icon-right-hide:hover, .search-input-container-hide .search-input-icon-right-hide:hover {
+  cursor: pointer;
+}
+
+.search-input-container .search-input-icon-right-hide, .search-input-container-hide .search-input-icon-right-hide {
+  display: none;
+}
+/*# sourceMappingURL=searchBar.css.map */

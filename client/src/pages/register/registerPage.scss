@@ -1,0 +1,91 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+.register-page {
+  @include center-form;
+  padding-bottom: $mediumMargin;
+  .register-form-container {
+    display: flex;
+    flex-direction: column;
+    gap: $mediumMargin;
+    .form-with-title {
+      display: flex;
+      flex-direction: column;
+      gap: $margin;
+      .register-form {
+        display: flex;
+        flex-direction: column;
+        gap: $margin;
+        .server {
+          &-error {
+            h3 {
+              color: $red;
+            }
+          }
+          &-loading {
+            h3 {
+              color: $tertiery;
+            }
+          }
+          &-success {
+            h3 {
+              color: $green;
+            }
+          }
+        }
+        .row-1 {
+          display: flex;
+          gap: $margin;
+          flex-direction: column;
+          .firstname-input {
+            flex: 1;
+          }
+          .lastname-input {
+            flex: 1;
+          }
+          @include breakpoint(sm, min) {
+            flex-direction: row;
+          }
+        }
+        .row-2 {
+          display: flex;
+          gap: $margin;
+          flex-direction: column;
+          @include breakpoint(md, min) {
+            flex-direction: row;
+          }
+          .username-input {
+            flex: 1;
+          }
+          .email-input {
+            flex: 1;
+          }
+        }
+        .row-3 {
+          display: flex;
+          gap: $margin;
+          flex-direction: column;
+          @include breakpoint(sm, min) {
+            flex-direction: row;
+          }
+          .password-input {
+            flex: 1;
+            margin-top: auto;
+          }
+          .confirm-password-input {
+            flex: 1;
+          }
+        }
+        .form-footer {
+          display: flex;
+          .btn-large {
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+  .here-txt {
+    color: $tertiery;
+    border-bottom: 2px solid $tertiery;
+  }
+}

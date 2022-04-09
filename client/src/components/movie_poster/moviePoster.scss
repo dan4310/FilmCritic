@@ -1,0 +1,41 @@
+@import "../../styles/variables";
+
+.movie-poster {
+  box-shadow: 4px 4px 7px $black;
+  background-color: $primary;
+  height: 180px;
+  position: relative;
+  z-index: 100;
+  width: fit-content;
+
+  transform: scale(1);
+  transition: 0.15s all ease;
+  .img-poster {
+    height: 100%;
+  }
+  &:hover {
+    box-shadow: 8px 8px 15px $black;
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+
+  .movie-rating {
+    position: absolute;
+    bottom: -8px;
+    right: -8px;
+  }
+}
+
+.movie-poster-large {
+  background: $primary;
+  width: 100%;
+}
+
+.skeleton-poster {
+  min-width: 120px;
+  background-color: $primary;
+  margin-right: 1rem;
+  overflow-x: hidden;
+  width: fit-content;
+  height: 180px;
+}

@@ -1,0 +1,305 @@
+h1 {
+  color: white;
+  text-shadow: 3px 3px #47475a;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  color: white;
+  text-shadow: 1px 1px #47475a;
+  font-size: 16px;
+}
+
+h2 {
+  color: white;
+  text-shadow: 2px 2px #505064;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+h3 {
+  color: #505064;
+  text-shadow: 2px 2px #000000;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.review-first-name {
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+  text-shadow: 2px 2px #000000;
+}
+
+.review-date {
+  font-size: 13px;
+  font-weight: 400;
+  color: #1d1d23;
+}
+
+.review-username {
+  color: #e1caf0;
+  font-size: 11px;
+}
+
+@-webkit-keyframes border-round {
+  0% {
+    border-bottom: 2px solid white;
+  }
+  25% {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+  }
+  50% {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+  }
+  100% {
+    border: 2px solid white;
+  }
+}
+
+@keyframes border-round {
+  0% {
+    border-bottom: 2px solid white;
+  }
+  25% {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+  }
+  50% {
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+  }
+  100% {
+    border: 2px solid white;
+  }
+}
+
+@-webkit-keyframes border-round-md {
+  0% {
+    border-bottom: 3px solid white;
+  }
+  25% {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+  }
+  50% {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+  }
+  100% {
+    border: 3px solid white;
+  }
+}
+
+@keyframes border-round-md {
+  0% {
+    border-bottom: 3px solid white;
+  }
+  25% {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+  }
+  50% {
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-top: 3px solid white;
+  }
+  100% {
+    border: 3px solid white;
+  }
+}
+
+@-webkit-keyframes border-round-lg {
+  0% {
+    border-bottom: 4px solid white;
+  }
+  25% {
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+  }
+  50% {
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+  }
+  100% {
+    border: 4px solid white;
+  }
+}
+
+@keyframes border-round-lg {
+  0% {
+    border-bottom: 4px solid white;
+  }
+  25% {
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+  }
+  50% {
+    border-bottom: 4px solid white;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+  }
+  100% {
+    border: 4px solid white;
+  }
+}
+
+@-webkit-keyframes opacity-transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opacity-transition {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.input-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-component .label-container {
+  word-wrap: auto;
+}
+
+.input-component .label-container .label {
+  text-shadow: 2px 2px #000000;
+  color: white;
+}
+
+.input-component .input-container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-component .input-container .toggle-visible-container {
+  padding: 8px;
+  position: absolute;
+  background: transparent;
+}
+
+.input-component .input-container .toggle-visible-container .toggle-visible-icon {
+  color: #e1caf0;
+  font-size: 13px;
+}
+
+.input-component .input-container .toggle-visible-container .toggle-visible-icon:hover {
+  text-shadow: 1px 1px #000000;
+  cursor: pointer;
+}
+
+.input-component .input-container .input, .input-component .input-container .input-password {
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px 10px;
+  padding-right: calc(6px + 10px);
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  outline: 2px solid transparent;
+  background: #47475a;
+  color: white;
+  font-size: 16px;
+}
+
+.input-component .input-container .input:hover, .input-component .input-container .input-password:hover {
+  -webkit-box-shadow: 5px 5px #000000;
+          box-shadow: 5px 5px #000000;
+  background: white;
+  color: #1d1d23;
+}
+
+.input-component .input-container .input:focus, .input-component .input-container .input-password:focus {
+  outline: 2px solid #e1caf0;
+  -webkit-box-shadow: 5px 5px #000000;
+          box-shadow: 5px 5px #000000;
+  background: white;
+  color: #1d1d23;
+}
+
+.input-component .input-container .input-password {
+  padding-left: 32px;
+}
+
+.input-component .validation-info-container {
+  position: absolute;
+  right: 0;
+}
+
+.input-component .validation-info-container .input-error-container {
+  padding: 8px;
+  background: transparent;
+  border-radius: 4px;
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.input-component .validation-info-container .input-error-container .error-icon {
+  color: #fabd43;
+  font-size: 20px;
+  padding-right: 3px;
+  text-shadow: 2px 2px #000000;
+}
+
+.input-component .validation-info-container .input-error-container .error-icon .validation-info {
+  display: none;
+}
+
+.input-component .validation-info-container .input-error-container .error-icon:hover .validation-info {
+  display: block;
+  position: absolute;
+  top: -100%;
+  left: -100px;
+  width: 200px;
+  color: white;
+  font-weight: 500;
+  font-size: 12px;
+  background: #fabd43;
+  -webkit-box-shadow: 3px 3px 10px #000000;
+          box-shadow: 3px 3px 10px #000000;
+  padding: 10px;
+  text-shadow: 1px 1px #000000;
+  border-radius: 3px;
+  z-index: 1000;
+  -webkit-animation: opacity-transition 0.1s forwards ease-in-out;
+          animation: opacity-transition 0.1s forwards ease-in-out;
+}
+/*# sourceMappingURL=input.css.map */

@@ -1,0 +1,50 @@
+.movie-poster {
+  -webkit-box-shadow: 4px 4px 7px #000000;
+          box-shadow: 4px 4px 7px #000000;
+  background-color: #505064;
+  height: 180px;
+  position: relative;
+  z-index: 100;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.15s all ease;
+  transition: 0.15s all ease;
+}
+
+.movie-poster .img-poster {
+  height: 100%;
+}
+
+.movie-poster:hover {
+  -webkit-box-shadow: 8px 8px 15px #000000;
+          box-shadow: 8px 8px 15px #000000;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  cursor: pointer;
+}
+
+.movie-poster .movie-rating {
+  position: absolute;
+  bottom: -8px;
+  right: -8px;
+}
+
+.movie-poster-large {
+  background: #505064;
+  width: 100%;
+}
+
+.skeleton-poster {
+  min-width: 120px;
+  background-color: #505064;
+  margin-right: 1rem;
+  overflow-x: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 180px;
+}
+/*# sourceMappingURL=moviePoster.css.map */

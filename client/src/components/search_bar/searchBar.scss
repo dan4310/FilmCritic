@@ -1,0 +1,82 @@
+@import "../../styles/variables";
+
+.search-input-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  color: $white;
+  width: 100%;
+  &-hide {
+    @extend .search-input-container;
+    width: auto;
+  }
+  .search-input {
+    border-radius: 20px;
+    border: 2px solid $white;
+    box-shadow: 2px 2px $black;
+    padding: 0 calc(40px + 5px);
+    height: 40px;
+    width: 100%;
+    position: relative;
+    background: none;
+    color: $white;
+    &::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: $primary;
+      text-shadow: 2px 2px $black;
+      opacity: 1; /* Firefox */
+    }
+
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: $primary;
+    }
+
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: $primary;
+    }
+    &-hide {
+      @extend .search-input;
+      display: none;
+    }
+  }
+  .search-input-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 100%;
+    font-size: 16px;
+    padding: 10px;
+    background: none;
+    text-shadow: 2px 2px $black;
+    border: 2px solid transparent;
+    &-left {
+      @extend .search-input-icon;
+      left: 0;
+      &:hover {
+        cursor: pointer;
+      }
+      &-hide {
+        @extend .search-input-icon-left;
+        background: $tertiery;
+        box-shadow: 3px 3px $black;
+        position: inherit;
+        border: 2px solid $white;
+        color: $white;
+      }
+    }
+    &-right {
+      @extend .search-input-icon;
+      right: 0;
+      &:hover {
+        cursor: pointer;
+      }
+      &-hide {
+        @extend .search-input-icon-right;
+        display: none;
+      }
+    }
+  }
+}

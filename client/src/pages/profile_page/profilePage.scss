@@ -1,0 +1,64 @@
+@import "../../styles/variables";
+
+.profile-page {
+  .center-panel {
+    display: flex;
+    flex-direction: column;
+    gap: $margin;
+
+    .my-reviews-container {
+      display: flex;
+      gap: $margin;
+      flex-direction: column;
+      .my-reviews-header {
+        display: flex;
+        button {
+          flex: 1;
+          padding: $smallMargin 0;
+          background: none;
+          border: 2px solid transparent;
+          border-radius: 5px;
+          &:hover {
+            cursor: pointer;
+            animation: border-round 0.5s forwards ease-in-out;
+          }
+          &:active {
+            box-shadow: 4px 4px $black;
+          }
+        }
+      }
+    }
+
+    .name-info {
+      display: flex;
+      flex-direction: column;
+      .username-info {
+        display: flex;
+        align-items: center;
+        gap: $margin;
+        .profile-username {
+          font-size: 20px;
+          color: $tertiery;
+          text-shadow: none;
+        }
+        button {
+          background: none;
+          border: none;
+          color: $primary;
+          border-bottom: 2px solid transparent;
+          .signout-text {
+            font-size: 12px;
+          }
+          &:hover {
+            border-bottom: 2px solid $primary;
+            cursor: pointer;
+          }
+          &:active {
+            border-bottom: 2px solid $white;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

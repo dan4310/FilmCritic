@@ -1,0 +1,96 @@
+.profile-page .center-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.profile-page .center-panel .my-reviews-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-page .center-panel .my-reviews-container .my-reviews-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.profile-page .center-panel .my-reviews-container .my-reviews-header button {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0.5rem 0;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.profile-page .center-panel .my-reviews-container .my-reviews-header button:hover {
+  cursor: pointer;
+  -webkit-animation: border-round 0.5s forwards ease-in-out;
+          animation: border-round 0.5s forwards ease-in-out;
+}
+
+.profile-page .center-panel .my-reviews-container .my-reviews-header button:active {
+  -webkit-box-shadow: 4px 4px #000000;
+          box-shadow: 4px 4px #000000;
+}
+
+.profile-page .center-panel .name-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.profile-page .center-panel .name-info .username-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.profile-page .center-panel .name-info .username-info .profile-username {
+  font-size: 20px;
+  color: #e1caf0;
+  text-shadow: none;
+}
+
+.profile-page .center-panel .name-info .username-info button {
+  background: none;
+  border: none;
+  color: #505064;
+  border-bottom: 2px solid transparent;
+}
+
+.profile-page .center-panel .name-info .username-info button .signout-text {
+  font-size: 12px;
+}
+
+.profile-page .center-panel .name-info .username-info button:hover {
+  border-bottom: 2px solid #505064;
+  cursor: pointer;
+}
+
+.profile-page .center-panel .name-info .username-info button:active {
+  border-bottom: 2px solid white;
+  color: white;
+}
+/*# sourceMappingURL=profilePage.css.map */

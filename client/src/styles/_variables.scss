@@ -1,0 +1,44 @@
+$secondary: rgb(29, 29, 35);
+$tertiery: rgb(225, 202, 240);
+$primary: rgb(80, 80, 100);
+$primaryTransparent: rgba(80, 80, 100, 0.5);
+$primaryNavbar: #3e3e4d;
+$primaryDark: rgb(71, 71, 90);
+
+$white: rgb(255, 255, 255);
+$black: #000000;
+$green: #1fd237;
+$orange: #fabd43;
+$red: #d12525;
+
+$margin: 1rem;
+$smallMargin: 0.5rem;
+$xsmallMargin: 0.25rem;
+$xxsmallMargin: 0.1rem;
+$mediumMargin: 2rem;
+$largeMargin: 4rem;
+
+$navbarHeight: 3rem;
+$footerHeight: 150px;
+$mainContentMargin: $margin;
+
+$fontSizeH1: 32px;
+$fontSizeH2: 25px;
+$fontSizeH3: 18px;
+$fontSizeH4: 16px;
+
+$fontSizeP: 16px;
+
+$fontSizeLbl: 13px;
+
+$fontWeightRegular: 400;
+$fontWeightBold: 500;
+$fontWeightXBold: 700;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);

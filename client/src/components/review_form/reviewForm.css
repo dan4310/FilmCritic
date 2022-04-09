@@ -1,0 +1,158 @@
+.review-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.review-form hr {
+  border: 1px solid #47475a;
+}
+
+.review-form .form-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.review-form .form-header .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.review-form .form-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.review-form .form-controls .leave-a-review-text {
+  color: #1d1d23;
+  font-size: 18px;
+}
+
+.review-form .form-controls .form-close-container {
+  margin-left: auto;
+  background: none;
+  border-radius: 50px;
+}
+
+.review-form .form-controls .form-close-container .form-close-icon {
+  font-size: 20px;
+  color: #1d1d23;
+}
+
+.review-form .form-controls .form-close-container .form-close-icon:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+.review-form .review-input-container textarea {
+  resize: none;
+  width: 100%;
+  font-size: 16px;
+  height: 150px;
+  padding: 0;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  background: #47475a;
+  border: none;
+}
+
+.review-form .form-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.review-form .form-footer .slider-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.review-form .form-footer .slider-container .chart-icon {
+  font-size: 20px;
+  color: #1d1d23;
+}
+
+.review-form .form-footer .slider-container .rating-slider {
+  -webkit-appearance: none;
+  background: #47475a;
+  height: 15px;
+  border-radius: 3px;
+}
+
+.review-form .form-footer .slider-container .rating-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 25px;
+  border-radius: 100px;
+  height: 25px;
+  background: #e1caf0;
+  cursor: pointer;
+}
+
+.review-form .form-footer .slider-container .rating-slider::-webkit-slider-thumb:hover {
+  border: 2px solid white;
+  -webkit-box-shadow: 2px 2px #000000;
+          box-shadow: 2px 2px #000000;
+}
+
+.review-form .form-footer .btn-large {
+  margin-left: auto;
+}
+
+.review-form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #505064;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  gap: 8px;
+  border: 2px solid #505064;
+  border-radius: 100px;
+  background: transparent;
+  text-shadow: 2px 2px #000000;
+  -webkit-box-shadow: 2px 2px #000000;
+          box-shadow: 2px 2px #000000;
+}
+
+.review-form-button:hover {
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.review-form-button .review-icon {
+  font-size: 20px;
+}
+
+.review-form-button .leave-a-review-text {
+  font-size: 15px;
+}
+/*# sourceMappingURL=reviewForm.css.map */

@@ -1,0 +1,25 @@
+@import "../../styles/variables";
+
+.error-container {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .error-icon {
+    font-size: 50px;
+    margin-bottom: 1rem;
+  }
+  .error-icon-small {
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+  }
+
+  .error-text {
+    font-size: 16px;
+  }
+  .error-text-small {
+    font-size: 10px;
+  }
+}

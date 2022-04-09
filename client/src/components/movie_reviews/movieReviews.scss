@@ -1,0 +1,12 @@
+@import "../../styles/variables";
+
+.review-feed-container {
+  display: flex;
+  flex-direction: column;
+  gap: $margin;
+}
+.review-list {
+  display: flex;
+  flex-direction: column;
+  gap: $largeMargin;
+}

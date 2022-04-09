@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.comment-container {
+  display: flex;
+  flex-direction: column;
+  gap: $smallMargin;
+  padding: 0rem $margin;
+  .comment-body {
+    p {
+      font-size: 14px;
+    }
+  }
+  .comment-header {
+    display: flex;
+    i {
+      margin-left: auto;
+      font-size: 20px;
+      color: $primaryDark;
+      &:hover {
+        color: $white;
+        text-shadow: 2px 2px $black;
+        cursor: pointer;
+      }
+    }
+    .user-info {
+      display: flex;
+      flex-direction: column;
+      .review-first-name {
+        font-size: 10px;
+      }
+      .review-username {
+        font-size: 8px;
+      }
+    }
+    .timestamp {
+      margin-left: auto;
+      font-size: 10px;
+      color: $primary;
+    }
+  }
+
+  .comment-footer {
+    display: flex;
+  }
+}

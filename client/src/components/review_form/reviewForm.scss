@@ -1,0 +1,118 @@
+@import "../../styles/variables";
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: $smallMargin;
+
+  hr {
+    border: 1px solid $primaryDark;
+  }
+
+  .form-header {
+    display: flex;
+    align-items: center;
+    gap: $smallMargin;
+    .user-info {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  .form-controls {
+    display: flex;
+    .leave-a-review-text {
+      color: $secondary;
+      font-size: $fontSizeH3;
+    }
+    .form-close-container {
+      margin-left: auto;
+      background: none;
+      border-radius: 50px;
+      .form-close-icon {
+        font-size: 20px;
+        color: $secondary;
+        &:hover {
+          cursor: pointer;
+          color: $white;
+          text-shadow: 2px 2px $black;
+        }
+      }
+    }
+  }
+
+  .review-input-container {
+    textarea {
+      resize: none;
+      width: 100%;
+      font-size: $fontSizeP;
+      height: 150px;
+      padding: 0;
+      color: $white;
+      padding: 5px;
+      border-radius: 5px;
+      background: $primaryDark;
+      border: none;
+    }
+  }
+
+  .form-footer {
+    display: flex;
+    align-items: center;
+    .slider-container {
+      display: flex;
+      align-items: center;
+      gap: $smallMargin;
+      .chart-icon {
+        font-size: 20px;
+        color: $secondary;
+      }
+      .rating-slider {
+        -webkit-appearance: none;
+        background: $primaryDark;
+        height: 15px;
+        border-radius: 3px;
+        &::-webkit-slider-thumb {
+          -webkit-appearance: none;
+          width: 25px;
+          border-radius: 100px;
+          height: 25px;
+          background: $tertiery;
+          cursor: pointer;
+          &:hover {
+            border: 2px solid $white;
+            box-shadow: 2px 2px $black;
+          }
+        }
+      }
+    }
+
+    .btn-large {
+      margin-left: auto;
+    }
+  }
+}
+
+.review-form-button {
+  display: flex;
+  color: $primary;
+  align-items: center;
+  padding: 10px;
+  gap: 8px;
+  border: 2px solid $primary;
+  border-radius: 100px;
+  background: transparent;
+  text-shadow: 2px 2px $black;
+  box-shadow: 2px 2px $black;
+  &:hover {
+    color: $white;
+    border: 2px solid $white;
+    cursor: pointer;
+  }
+  .review-icon {
+    font-size: 20px;
+  }
+  .leave-a-review-text {
+    font-size: 15px;
+  }
+}

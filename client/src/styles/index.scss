@@ -1,0 +1,23 @@
+@import "typography";
+@import "mixins";
+@import "globals";
+@import "variables";
+@import "keyframes";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  background-color: $secondary;
+  min-height: 100vh;
+  min-width: 100%;
+}
+
+.hidden-link {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,44 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.like-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  border-radius: 3px;
+  border: none;
+  color: $secondary;
+  gap: $xsmallMargin;
+  &:disabled {
+    color: $primaryDark;
+  }
+
+  i {
+    font-size: 20px;
+  }
+  .like-button-text {
+    font-size: 14px;
+    font-weight: 500;
+    display: none;
+    @include breakpoint(sm, min) {
+      display: flex;
+    }
+  }
+  &:hover {
+    @extend .like-button;
+    text-shadow: 2px 2px $black;
+
+    &:disabled {
+      color: $primaryDark;
+      text-shadow: none;
+      cursor: default;
+    }
+    cursor: pointer;
+    color: $white;
+  }
+  &.liked {
+    @extend .like-button;
+    color: $tertiery;
+  }
+}

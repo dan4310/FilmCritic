@@ -1,0 +1,192 @@
+.review-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.actual-review-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+
+.actual-review-container .review-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.actual-review-container .review-header .header-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.actual-review-container .review-header .header-left .user-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.actual-review-container .review-header .header-right {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: top;
+      -ms-flex-align: top;
+          align-items: top;
+}
+
+.actual-review-container .review-header .header-right i {
+  font-size: 25px;
+  color: #1d1d23;
+}
+
+.actual-review-container .review-header .header-right i:hover {
+  cursor: pointer;
+  color: white;
+  text-shadow: 2px 2px #000000;
+}
+
+.actual-review-container .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.actual-review-container .details hr {
+  border: 1px solid #47475a;
+}
+
+.actual-review-container .details .details-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actual-review-container .details .details-container .info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.25rem;
+  border-bottom: 1px solid transparent;
+  position: relative;
+}
+
+.actual-review-container .details .details-container .info-container .info-popup {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  width: 150px;
+  overflow-x: hidden;
+  background: #1d1d23;
+  padding: 8px;
+  border-radius: 3px;
+  opacity: 0.8;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.actual-review-container .details .details-container .info-container .info-popup .liker-text {
+  color: white;
+  font-size: 12px;
+  border-bottom: 2px solid transparent;
+}
+
+.actual-review-container .details .details-container .info-container .info-popup .liker-text:hover {
+  border-bottom: 1px solid white;
+}
+
+.actual-review-container .details .details-container .info-container .info-text {
+  color: white;
+  font-size: 13px;
+}
+
+.actual-review-container .details .details-container .info-container i {
+  color: white;
+  font-size: 12px;
+}
+
+.actual-review-container .details .details-container .info-container:hover {
+  cursor: pointer;
+  border-bottom: 1px solid white;
+}
+
+.actual-review-container .details .details-container .info-container:hover .info-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.actual-review-container .review-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.actual-review-container .review-footer .footer-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.actual-review-container .review-footer .review-date {
+  margin-left: auto;
+}
+
+.review-header-rating-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #e1caf0;
+  border-radius: 100px;
+  height: 40px;
+  width: 40px;
+  -webkit-box-shadow: 2px 2px #000000;
+          box-shadow: 2px 2px #000000;
+  border: 1px solid white;
+}
+
+.review-header-rating-container .review-rating {
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 1px 1px #000000;
+}
+/*# sourceMappingURL=review.css.map */

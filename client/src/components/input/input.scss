@@ -1,0 +1,104 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.input-component {
+  display: flex;
+  flex-direction: column;
+  gap: $smallMargin;
+  .label-container {
+    word-wrap: auto;
+    .label {
+      text-shadow: 2px 2px $black;
+      color: $white;
+    }
+  }
+  .input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    .toggle-visible-container {
+      padding: 8px;
+      position: absolute;
+      background: transparent;
+      .toggle-visible-icon {
+        color: $tertiery;
+        font-size: 13px;
+        &:hover {
+          text-shadow: 1px 1px $black;
+          cursor: pointer;
+        }
+      }
+    }
+    .input {
+      width: 100%;
+      border-radius: 4px;
+      padding: 8px 10px;
+      padding-right: calc(6px + 10px);
+      transition: all 0.2s ease-in-out;
+      border: none;
+      outline: 2px solid transparent;
+      background: $primaryDark;
+      color: $white;
+      font-size: $fontSizeP;
+
+      &:hover {
+        box-shadow: 5px 5px $black;
+        background: $white;
+        color: $secondary;
+      }
+      &:focus {
+        outline: 2px solid $tertiery;
+        box-shadow: 5px 5px $black;
+        background: $white;
+        color: $secondary;
+      }
+
+      &-password {
+        @extend .input;
+        padding-left: 32px;
+      }
+    }
+  }
+
+  .validation-info-container {
+    position: absolute;
+    right: 0;
+    .input-error-container {
+      padding: 8px;
+      background: transparent;
+      border-radius: 4px;
+      margin-left: auto;
+      display: flex;
+      justify-content: center;
+      .error-icon {
+        color: $orange;
+        font-size: 20px;
+        padding-right: 3px;
+        text-shadow: 2px 2px $black;
+        .validation-info {
+          display: none;
+        }
+
+        &:hover {
+          .validation-info {
+            display: block;
+            position: absolute;
+            top: -100%;
+            left: -100px;
+            width: 200px;
+            color: $white;
+            font-weight: 500;
+            font-size: 12px;
+            background: $orange;
+            box-shadow: 3px 3px 10px $black;
+            padding: 10px;
+            text-shadow: 1px 1px $black;
+            border-radius: 3px;
+            z-index: 1000;
+            animation: opacity-transition 0.1s forwards ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}

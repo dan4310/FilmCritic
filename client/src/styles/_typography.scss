@@ -1,0 +1,52 @@
+@import "variables";
+
+h1 {
+  color: $white;
+  text-shadow: 3px 3px $primaryDark;
+  font-size: $fontSizeH1;
+  font-weight: $fontWeightXBold;
+}
+
+p {
+  font-weight: $fontWeightRegular;
+  color: $white;
+  text-shadow: 1px 1px $primaryDark;
+  font-size: $fontSizeP;
+}
+
+h2 {
+  color: $white;
+  text-shadow: 2px 2px $primary;
+  font-size: $fontSizeH2;
+  font-weight: $fontWeightBold;
+}
+
+h3 {
+  color: $primary;
+  text-shadow: 2px 2px $black;
+  font-size: $fontSizeH3;
+  font-weight: $fontWeightBold;
+}
+
+h4 {
+  font-size: $fontSizeH4;
+  font-weight: $fontWeightBold;
+}
+
+.review-first-name {
+  color: $white;
+  font-size: 13px;
+  font-weight: 400;
+  text-shadow: 2px 2px $black;
+}
+
+.review-date {
+  font-size: 13px;
+  font-weight: 400;
+  color: $secondary;
+}
+
+.review-username {
+  color: $tertiery;
+  font-size: 11px;
+}
